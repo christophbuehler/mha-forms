@@ -1,0 +1,106 @@
+.directive-button {
+  display: inline-block; }
+  .directive-button .btn {
+    height: 34px;
+    width: 254px;
+    background: #1976D2;
+    display: inline-block;
+    border-radius: 2px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer; }
+    .directive-button .btn span {
+      line-height: 34px; }
+    .directive-button .btn:active {
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+* {
+  font-family: 'Open Sans', sans-serif; }
+
+.directive-input-wrapper {
+  padding: 8px 16px; }
+  .directive-input-wrapper .label {
+    width: 280px;
+    text-align: left;
+    display: inline-block;
+    font-size: 14px;
+    color: #333; }
+  .directive-input-wrapper .control {
+    display: inline-block;
+    height: 34px;
+    position: relative; }
+
+.directive-input .text {
+  line-height: 32px;
+  height: 34px;
+  width: 254px;
+  padding: 0 12px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #333; }
+
+.directive-select {
+  display: inline-block;
+  position: relative; }
+  .directive-select .input-wrapper {
+    cursor: default;
+    white-space: nowrap; }
+    .directive-select .input-wrapper .text {
+      line-height: 32px;
+      height: 34px;
+      border: 1px solid #ddd;
+      padding: 0 12px;
+      width: 220px;
+      box-sizing: border-box;
+      font-size: 14px;
+      color: #333; }
+    .directive-select .input-wrapper .arrow {
+      height: 34px;
+      width: 34px;
+      box-sizing: border-box;
+      border: 1px solid #ddd;
+      border-left: none;
+      display: inline-block;
+      vertical-align: top;
+      text-align: center; }
+      .directive-select .input-wrapper .arrow span {
+        color: #333;
+        line-height: 32px; }
+        .directive-select .input-wrapper .arrow span.reverse {
+          transform: rotate(180deg); }
+  .directive-select .proposals {
+    z-index: 1;
+    position: absolute;
+    top: 33px;
+    left: 0;
+    border: 1px solid #ddd;
+    border-top: none;
+    background: #fff;
+    width: 220px;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+    .directive-select .proposals ul {
+      margin: 0;
+      padding: 0; }
+      .directive-select .proposals ul li {
+        list-style: none;
+        padding: 0 12px;
+        line-height: 32px;
+        border-top: 1px solid #f2f2f2;
+        cursor: pointer; }
+        .directive-select .proposals ul li span {
+          font-size: 14px; }
+        .directive-select .proposals ul li:hover {
+          background: #fafafa; }
+    .directive-select .proposals .nothing {
+      padding: 0 12px;
+      line-height: 32px;
+      font-weight: bold;
+      font-size: 12px;
+      cursor: default; }
+

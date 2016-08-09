@@ -1,0 +1,24 @@
+<div class="directive directive-select">
+    <mha-input-wrapper mha-label="vm.label">
+        <div class="input-wrapper">
+            <input
+                ng-focus="focus = true; hadFocus = true"
+                ng-blur="focus = false"
+                ng-model="vm.text"
+                class="text" type="text"><div class="arrow">
+                <span
+                    ng-click="vm.initiative = !vm.initiative"
+                    ng-class="{reverse: vm.text != vm.model.name || vm.initiative}"
+                    class="material-icons">keyboard_arrow_down</span>
+            </div>
+        </div>
+        <div class="proposals" ng-if="vm.text != vm.model.name || vm.initiative">
+            <ul>
+                <li
+                    ng-click="vm.initiative = false; vm.setModel(option)"
+                    ng-repeat="option in filteredOptions = (vm.options | filter:vm.text)"><span>{{ option.name }}</span></li>
+            </ul>
+            <i class="nothing" ng-if="filteredOptions.length === 0">Keine Einträge gefunden.</ispan>
+        </div>
+    </mha-input-wrapper>
+</div>

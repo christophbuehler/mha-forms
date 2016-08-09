@@ -1,0 +1,6 @@
+<div class="module module-main" ng-controller="MainController as main">
+    <formly-form model="main.model" fields="main.fields">
+        <mha-button ng-click="vm.submit(vm.user)">Submit</mha-button>
+    </formly-form>
+    {{ main.model }}
+</div>
